@@ -7,8 +7,12 @@ const cartSchema=new Schema({
         required:true,
         trim:true
     },
-    product_name:String,
+    brand:String,
+    processor:String,
+    ramSize:Number,
+    laptop_model:String,
     price:Number,
+   timestamp:Number,
     productId:String
 })
 const Cart = mongoose.model('Cart', cartSchema);

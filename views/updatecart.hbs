@@ -58,16 +58,34 @@
 <body>
     <h1>Update Your Cart</h1>
     <form action="/updateCart" method="post">
-        <label for="product_type">Product Category:</label><br>
-        <input type="text" name="product_category" id="name" value="{{updateCart.product_category}}"><br>
+        <label for="product_type">Product Brand:</label><br>
+        <input type="text" name="product_Brand" id="product_Brand" value="{{updateCart.product_Brand}}"><br>
 
         <label for="product_name">Product Name:</label><br>        
-        <input type="text" name="product_name" id="product_name" value="{{updateCart.product_name}}"><br>
+        <input type="text" name="product_processor" id="product_processor" value="{{updateCart.product_processor}}"><br>
+         <label for="product_name">RAM Size:</label><br>        
+        <input type="text" name="ram_size" id="ram_size" value="{{updateCart.ram_size}}"><br>
+         <label for="product_name">Laptop Model:</label><br>        
+        <input type="text" name="laptop_model" id="laptop_model" value="{{updateCart.laptop_model}}"><br>
+
 
         <label for="price">Price:</label><br>
         <input name="price" id="price" value="{{updateCart.price}}"><br>
+        <label for="product_name">Time Stamp:</label><br>        
+        <input type="text" name="timestamp" id="timestamp" value="{{updateCart.timestamp}}"><br>
+    
+<!-- 
+    <label for="product_name">Product Name:</label><br>
+    <input type="text" id="product_name" name="product_name" required><br> -->
+
+    <label for="price">Price:</label><br>
+    <input type="number" id="price" name="price" step="0.01" min="0" required><br>
+    <label for="product_type">Time Stamp:</label><br>
+    <input type="number" id="timestamp" name="timestamp" required><br>
+        
        
        <input type="hidden" name="productId" value="{{updateCart.productId}}">
+
         <button>submit</button>
     </form>
 </body>

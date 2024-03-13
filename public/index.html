@@ -74,14 +74,23 @@
 <body>
 <h2>Add a Product</h2>
 <form action="/addproduct" method="post">
-    <label for="product_type">Product Category:</label><br>
-    <input type="text" id="product_category" name="product_category" required><br>
-
+    <label for="product_type">Product Brand:</label><br>
+    <input type="text" id="product_Brand" name="product_Brand" required><br>
+    <label for="product_type">Product Processor:</label><br>
+    <input type="text" id="product_Processor" name="product_Processor" required><br>
+    <label for="product_type">RAM Size:</label><br>
+    <input type="number" id="ram_size" name="ram_size" required><br>
+    <label for="product_type">Laptop Model:</label><br>
+    <input type="text" id="laptop_model" name="laptop_model" required><br>
+    
+<!-- 
     <label for="product_name">Product Name:</label><br>
-    <input type="text" id="product_name" name="product_name" required><br>
+    <input type="text" id="product_name" name="product_name" required><br> -->
 
     <label for="price">Price:</label><br>
     <input type="number" id="price" name="price" step="0.01" min="0" required><br>
+    <label for="product_type">Time Stamp:</label><br>
+    <input type="number" id="timestamp" name="timestamp" required><br>
 
     <input type="submit" value="Submit">
 </form>

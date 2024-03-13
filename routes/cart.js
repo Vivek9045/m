@@ -13,11 +13,15 @@ router.get("/getproducts",async(req,res)=>{
 
 router.post("/addproduct",async(req,res)=>{
     console.log(req.body);
-    const{product_category,product_name,price}=req.body
+    const{product_Brand,product_Processor,ram_size,laptop_model,price,timestamp}=req.body
     const obj={
-        product_category,
-        product_name,
+        product_Brand,
+        product_Processor,
+        ram_size,
+        laptop_model,
+        // product_name,
         price ,
+        timestamp,
         productId:uuidv4() 
     }
     console.log(obj);
@@ -42,11 +46,15 @@ router.get("/update/:productId",async(req,res)=>{
 })
 
 router.post("/updateCart",async(req,res)=>{
-    const{product_category,product_name,price,productId}=req.body
+    const{product_Brand,product_Processor,ram_size,laptop_model,price,timestamp,productId}=req.body
     const newObj={
-        product_category,
-        product_name,
-        price,
+        product_Brand,
+        product_Processor,
+        ram_size,
+        laptop_model,
+        // product_name,
+        price ,
+        timestamp,
         productId
     }
    console.log(newObj);
